@@ -1,24 +1,33 @@
 # OrcaProcAddr
 
-![OrcaGetProcAddr](https://github.com/pjxx01/OrcaProcAddr/assets/111459558/f6deefdf-a0e1-4459-8ddf-6354631a3974)
-
-
 List of all currently executing processes in the system u can use this Tool For Process injection well-known techniques like "Self Injection - Classic DLL Injection - PE Injection - Process Hollowing / Run PE - Thread Execution Hijacking and more...
 
 -------------------------
-| [+] Process Name     
+| [+] Process Name   
+
 | [+] Process PID
+
 | [+] THREADS CNT
+
 | [+] PARENT PROCESS ID
+
 | [+] CLASS BASE
+
 | [+] PRIORITY CLASS
 -------------------------
 
 
-###########################################
+![OrcaGetProcAddr](https://github.com/pjxx01/OrcaProcAddr/assets/111459558/f6deefdf-a0e1-4459-8ddf-6354631a3974)
+
+
+
+
 ## source code : 
 
-[Uploading OrcaFin#include <windows.h>
+
+
+
+#include <windows.h>
 #include <tlhelp32.h>
 #include <tchar.h>
 #include <stdio.h>
@@ -39,10 +48,6 @@ int main()
   printf(" ||            Hello HacktheWorld!!, WeAre OrcaRootkit$ and this Tool will             ||\n ||            help u to takes a snapshot of currently executing processes             ||");
   printf("\n ========================================================================================\n");
   cout << "" << endl;
-
-  //string Enter = "";
-  //cin >> Enter;
-  //cout << endl;
   GetProcessList();
   string Bye = "\n\n\n[+] DONE !\n\n";
   cout << Bye;
@@ -132,7 +137,10 @@ void printError(TCHAR const* msg)
 
   // Display the message
   _tprintf( TEXT("\n[-] WARNING: %s failed with error %d (%s)\n"), msg, eNum, sysMsg );
-}dProcAddr.cpp…]()
+}
+
+
+
 
 
 Happy Hacking - OrcaRootkit$ Team
