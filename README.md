@@ -11,4 +11,9 @@ List of all currently executing processes in the system u can use this Tool For 
 [+] PARENT PROCESS ID
 [+] CLASS BASE
 [+] PRIORITY CLASS
+
+
+
+
+Happy Hacking - OrcaRootkit$ Team
  
