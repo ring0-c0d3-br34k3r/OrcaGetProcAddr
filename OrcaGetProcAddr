@@ -1,7 +1,8 @@
 ## source code : 
 
 
-
+// u can put OrcaGetProcAddr in ur Code for geting The PID or something like that, or just compile it to exe and enjoy..
+// have a good Injection!!
 
 #include <windows.h>
 #include <tlhelp32.h>
