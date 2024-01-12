@@ -29,13 +29,7 @@ int main()
   cout << Bye;
   getchar();
   return 0;
-};
-
-  HANDLE hProcessSnap;
-  HANDLE hProcess;
-  DWORD  dwPriorityClass = 0;
-
-BOOL GetProcessList()
+}; HANDLE hProcessSnap; HANDLE hProcess; DWORD  dwPriorityClass = 0; BOOL GetProcessList()
 {
   hProcessSnap = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS ,0);
 
@@ -45,8 +39,7 @@ BOOL GetProcessList()
     return(FALSE);
     }
 
-  PROCESSENTRY32 pe32;
-  pe32.dwSize = sizeof(PROCESSENTRY32);
+  PROCESSENTRY32 pe32; pe32.dwSize = sizeof(PROCESSENTRY32);
 
     if(!Process32First(hProcessSnap, &pe32))
     {
@@ -95,16 +88,11 @@ do
 };
 void printError(TCHAR const* msg)
 {
-  DWORD eNum;
-  TCHAR sysMsg[256];
-  TCHAR* p;
-  p = sysMsg;
-  eNum = GetLastError( );
-  
-  FormatMessage( FORMAT_MESSAGE_FROM_SYSTEM | FORMAT_MESSAGE_IGNORE_INSERTS, NULL, eNum, MAKELANGID(LANG_NEUTRAL, SUBLANG_DEFAULT), sysMsg, 256, NULL);
+  DWORD eNum; TCHAR sysMsg[256]; TCHAR* p; p = sysMsg; eNum = GetLastError( );
+  FormatMessage(FORMAT_MESSAGE_FROM_SYSTEM | FORMAT_MESSAGE_IGNORE_INSERTS, NULL, eNum, MAKELANGID(LANG_NEUTRAL, SUBLANG_DEFAULT), sysMsg, 256, NULL);
 
 
-  while(( *p > 31 ) || ( *p == 9 ))
+  while((*p>31) || (*p==9))
   ++p;
   
   do 
@@ -112,9 +100,9 @@ void printError(TCHAR const* msg)
      *p-- = 0; 
     } 
     
-  while((p>=sysMsg)&& ((*p == '.') || (*p < 33)));
+  while((p >= sysMsg) && ((*p == '.') || (*p < 33)));
   
-  _tprintf( TEXT("\n[-] WARNING: %s failed with error %d (%s)\n"), msg, eNum, sysMsg );
+  _tprintf(TEXT("\n[-] WARNING: %s failed with error %d (%s)\n"), msg, eNum, sysMsg);
 }
 
 
