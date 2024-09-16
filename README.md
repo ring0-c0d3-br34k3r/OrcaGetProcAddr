@@ -1,6 +1,6 @@
 # OrcaGetProcAddr
 
-List of all currently executing processes in the system u can use this Tool For Process injection well-known techniques like "Self Injection - Classic DLL Injection - PE Injection - Process Hollowing / Run PE - Thread Execution Hijacking and more...
+List of all currently executing processes in the system you can use this code to develop an many Process injection well-known techniques like "Self Injection - Classic DLL Injection - PE Injection - Process Hollowing / Run PE - Thread Execution Hijacking and more..."
 
 -------------------------
 | [+] Process Name   
@@ -26,8 +26,3 @@ if u wanna leaen Process Injection techniques. this pdf will help u :
 
 [Process Injection RWX In Userland.pdf](https://github.com/0xp17j8/OrcaGetProcAddr/files/13914725/Process.Injection.RWX.In.Userland.pdf)
 
-
-
-
-Happy Hacking - OrcaRootkit$ Team
- 
